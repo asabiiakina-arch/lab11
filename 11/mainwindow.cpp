@@ -21,7 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionLoad_from_file, &QAction::triggered, this, &MainWindow::on_actionLoad_from_file_triggered);
     connect(ui->actionSave_to_file, &QAction::triggered, this, &MainWindow::on_actionSave_to_file_triggered);
 
-    // Валідатори для введення тільки чисел
     ui->aValue->setValidator(
         new QDoubleValidator(0.0001, 999999.0, 4, this));
 
